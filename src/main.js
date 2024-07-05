@@ -13,16 +13,16 @@ function loadImage(url) {
 }
 
 initUNetFromURL(
-  './public/rt_ldr_alb_nrm.tza',
+  './rt_ldr_alb_nrm.tza',
   undefined,
   {
     aux: true,
   }
 ).then((unet) => {
   Promise.all([
-    loadImage('./public/noisy.png'),
-    loadImage('./public/albedo.png'),
-    loadImage('./public/normal.png'),
+    loadImage('./noisy.png'),
+    loadImage('./albedo.png'),
+    loadImage('./normal.png'),
   ]).then(([colorImage, albedoImage, normImage]) => {
 
     const w = colorImage.width;
