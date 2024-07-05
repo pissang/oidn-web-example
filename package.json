@@ -1,0 +1,17 @@
+{
+  "name": "oidn-web-example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "oidn-web": "^0.2.2"
+  },
+  "devDependencies": {
+    "vite": "^5.3.3"
+  }
+}

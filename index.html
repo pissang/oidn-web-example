@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OIDN Web Example</title>
+  </head>
+  <body>
+    <style>
+      #source {
+        display: flex;
+      }
+      #source * {
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+    <h3>Denoised</h3>
+    <div id="status">Loading</div>
+    <canvas id="denoised" style="height: 500px"></canvas>
+    <h3>Source</h3>
+    <div id="source">
+      <img src="./public/noisy.png" />
+      <img src="./public/albedo.png" />
+      <img src="./public/normal.png" />
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
