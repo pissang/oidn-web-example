@@ -9,6 +9,14 @@ export default defineConfig({
   plugins: [],
 
   build: {
-    index: path.resolve(__dirname, 'index.html')
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+        'three-gpu-pathtracer': path.resolve(
+          __dirname,
+          'three-gpu-pathtracer.html'
+        )
+      }
+    }
   }
 });
